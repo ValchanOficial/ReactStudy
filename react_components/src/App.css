@@ -1,0 +1,99 @@
+.video-player{
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.video-player video{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.video-player button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.video-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-list li div {
+    font-size: 18px;
+    text-align: center;
+}
+
+.video{
+    position: relative;
+    width: 150px;
+    border: 1px solid #ddd;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
+
+.video:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.video img{
+    display: block;
+    width: calc(100% - 20px);
+    max-height: 150px;
+    margin: 10px auto;
+}
+
+.video-cinema{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-cinema video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-height: 90vh;
+}
+
+.video-cinema button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+
+
+video{
+    animation-name: ani-video;
+    animation-duration: 4s;
+    background-color: black;
+}
+
+@keyframes ani-video {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
